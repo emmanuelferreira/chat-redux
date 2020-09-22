@@ -21,8 +21,8 @@ import currentUserReducer from './reducers/current_user_reducer';
 const initialState = {
   messages: [],
   channels: ['general', 'react', 'paris'],
-  selectedChannel: "general",
-  currentUser: prompt("What is your username?") || `anonymous${Math.floor(10 + (Math.random() * 100))}`
+  selectedChannel: 'general',
+  currentUser: `anonymous${Math.floor(10 + (Math.random() * 100))}` // prompt("What is your username?")
 };
 
 const reducers = combineReducers({
